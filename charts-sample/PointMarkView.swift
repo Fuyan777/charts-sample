@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 
-struct Insect: Identifiable {
+private struct Insect: Identifiable {
     let name: String
     let family: String
     let wingLength: Double
@@ -18,7 +18,7 @@ struct Insect: Identifiable {
 }
 
 struct PointMarkView: View {
-    var data: [Insect] = [
+    private let data: [Insect] = [
         Insect(name: "Hepialidae", family: "Lepidoptera", wingLength: 61, wingWidth: 52, weight: 22),
         Insect(name: "Danaidae", family: "Lepidoptera", wingLength: 60, wingWidth: 48, weight: 24),
         Insect(name: "Riodinidae", family: "Lepidoptera", wingLength: 53, wingWidth: 43, weight: 18),
@@ -43,7 +43,6 @@ struct PointMarkView: View {
                     x: .value("Wing Length", $0.wingLength),
                     y: .value("Wing Width", $0.wingWidth)
                 )
-//                .foregroundStyle(by: .value("Family", $0.family))
             }
         }
         .frame(height: 200)

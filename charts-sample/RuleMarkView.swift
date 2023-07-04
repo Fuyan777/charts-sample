@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 
-struct Pollen: Identifiable {
+private struct Pollen: Identifiable {
     var source: String
     var startDate: Date
     var endDate: Date
@@ -22,15 +22,14 @@ struct Pollen: Identifiable {
     }
 }
 
-
-var data: [Pollen] = [
-    Pollen(startMonth: 1, numMonths: 9, source: "Trees"),
-    Pollen(startMonth: 12, numMonths: 1, source: "Trees"),
-    Pollen(startMonth: 3, numMonths: 8, source: "Grass"),
-    Pollen(startMonth: 4, numMonths: 8, source: "Weeds")
-]
-
 struct RuleMarkView: View {
+    private let data: [Pollen] = [
+        Pollen(startMonth: 1, numMonths: 9, source: "Trees"),
+        Pollen(startMonth: 12, numMonths: 1, source: "Trees"),
+        Pollen(startMonth: 3, numMonths: 8, source: "Grass"),
+        Pollen(startMonth: 4, numMonths: 8, source: "Weeds")
+    ]
+
     var body: some View {
         VStack {
             GroupBox("Rule Chart") {

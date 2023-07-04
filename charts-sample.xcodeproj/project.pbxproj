@@ -11,6 +11,7 @@
 		E7081B712A48460D00678176 /* LineMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7081B702A48460D00678176 /* LineMarkView.swift */; };
 		E7081B732A48482C00678176 /* PointMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7081B722A48482C00678176 /* PointMarkView.swift */; };
 		E7081B752A4867C600678176 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7081B742A4867C600678176 /* PathView.swift */; };
+		E7081B772A512D6500678176 /* MultiPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7081B762A512D6500678176 /* MultiPieChartView.swift */; };
 		E758F1372A428C0D0055B962 /* charts_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E758F1362A428C0D0055B962 /* charts_sampleApp.swift */; };
 		E758F1392A428C0D0055B962 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E758F1382A428C0D0055B962 /* ContentView.swift */; };
 		E758F13B2A428C0F0055B962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E758F13A2A428C0F0055B962 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		E7081B702A48460D00678176 /* LineMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMarkView.swift; sourceTree = "<group>"; };
 		E7081B722A48482C00678176 /* PointMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointMarkView.swift; sourceTree = "<group>"; };
 		E7081B742A4867C600678176 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
+		E7081B762A512D6500678176 /* MultiPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPieChartView.swift; sourceTree = "<group>"; };
 		E758F1332A428C0D0055B962 /* charts-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "charts-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E758F1362A428C0D0055B962 /* charts_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charts_sampleApp.swift; sourceTree = "<group>"; };
 		E758F1382A428C0D0055B962 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,8 @@
 		E758F1352A428C0D0055B962 /* charts-sample */ = {
 			isa = PBXGroup;
 			children = (
+				E79D0D5C2A545A89005FDD09 /* Original */,
+				E79D0D5B2A545A7C005FDD09 /* Charts */,
 				E758F1362A428C0D0055B962 /* charts_sampleApp.swift */,
 				E758F1382A428C0D0055B962 /* ContentView.swift */,
 				E758F13A2A428C0F0055B962 /* Assets.xcassets */,
@@ -128,6 +132,7 @@
 				E7081B722A48482C00678176 /* PointMarkView.swift */,
 				E7081B742A4867C600678176 /* PathView.swift */,
 				2641445D2A4E611E00C890FA /* GuageChartView.swift */,
+				E7081B762A512D6500678176 /* MultiPieChartView.swift */,
 			);
 			path = "charts-sample";
 			sourceTree = "<group>";
@@ -155,6 +160,20 @@
 				E758F1532A428C0F0055B962 /* charts_sampleUITestsLaunchTests.swift */,
 			);
 			path = "charts-sampleUITests";
+			sourceTree = "<group>";
+		};
+		E79D0D5B2A545A7C005FDD09 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		E79D0D5C2A545A89005FDD09 /* Original */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Original;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +312,7 @@
 				E758F1392A428C0D0055B962 /* ContentView.swift in Sources */,
 				E7081B752A4867C600678176 /* PathView.swift in Sources */,
 				E758F16A2A432AF00055B962 /* RuleMarkView.swift in Sources */,
+				E7081B772A512D6500678176 /* MultiPieChartView.swift in Sources */,
 				E758F16C2A432BC70055B962 /* BarAndRuleMarkView.swift in Sources */,
 				E758F1372A428C0D0055B962 /* charts_sampleApp.swift in Sources */,
 				E758F1662A4325560055B962 /* BarMarkSimpleView.swift in Sources */,

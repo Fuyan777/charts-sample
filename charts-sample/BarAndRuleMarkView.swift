@@ -8,20 +8,19 @@
 import SwiftUI
 import Charts
 
-struct DepartmentProfit: Identifiable {
+private struct DepartmentProfit: Identifiable {
     var department: String
     var profit: Double
     var id = UUID()
 }
 
-var departmentProfitData: [DepartmentProfit] = [
-    DepartmentProfit(department: "お肉", profit: 15000),
-    DepartmentProfit(department: "お寿司", profit: 8000),
-    DepartmentProfit(department: "パスタ", profit: 10000)
-]
-
-
 struct BarAndRuleMarkView: View {
+    private let departmentProfitData: [DepartmentProfit] = [
+        DepartmentProfit(department: "お肉", profit: 15000),
+        DepartmentProfit(department: "お寿司", profit: 8000),
+        DepartmentProfit(department: "パスタ", profit: 10000)
+    ]
+    
     var body: some View {
         GroupBox("Bar and Rule Chart") {
             Chart {

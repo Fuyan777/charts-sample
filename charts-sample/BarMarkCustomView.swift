@@ -8,8 +8,15 @@
 import SwiftUI
 import Charts
 
+private struct ToyShape: Identifiable {
+    var color: String
+    var type: String
+    var count: Double
+    var id = UUID()
+}
+
 struct BarMarkCustomView: View {
-    var stackedBarData: [ToyShape] = [
+    private let stackedBarData: [ToyShape] = [
         .init(color: "Green", type: "Cube", count: 2),
         .init(color: "Green", type: "Sphere", count: 0),
         .init(color: "Green", type: "Pyramid", count: 1),
@@ -44,13 +51,6 @@ struct BarMarkCustomView: View {
         .padding(16)
 
     }
-}
-
-struct ToyShape: Identifiable {
-    var color: String
-    var type: String
-    var count: Double
-    var id = UUID()
 }
 
 struct BarMarkCustomView_Previews: PreviewProvider {

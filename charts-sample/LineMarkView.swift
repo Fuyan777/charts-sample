@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 
-struct MonthlyHoursOfSunshine: Identifiable {
+private struct MonthlyHoursOfSunshine: Identifiable {
     var date: Date
     var hoursOfSunshine: Double
     var id = UUID()
@@ -20,7 +20,7 @@ struct MonthlyHoursOfSunshine: Identifiable {
     }
 }
 
-struct CityMonthlyHoursOfSunshine: Identifiable {
+private struct CityMonthlyHoursOfSunshine: Identifiable {
     var city: String
     var date: Date
     var hoursOfSunshine: Double
@@ -35,7 +35,7 @@ struct CityMonthlyHoursOfSunshine: Identifiable {
 }
 
 struct LineMarkView: View {
-    private var data: [MonthlyHoursOfSunshine] = [
+    private let data: [MonthlyHoursOfSunshine] = [
         MonthlyHoursOfSunshine(month: 1, hoursOfSunshine: 74),
         MonthlyHoursOfSunshine(month: 2, hoursOfSunshine: 99),
         MonthlyHoursOfSunshine(month: 3, hoursOfSunshine: 62),
@@ -46,7 +46,7 @@ struct LineMarkView: View {
         MonthlyHoursOfSunshine(month: 8, hoursOfSunshine: 43),
     ]
     
-    var cityData: [CityMonthlyHoursOfSunshine] = [
+    private let cityData: [CityMonthlyHoursOfSunshine] = [
         CityMonthlyHoursOfSunshine(city: "Seattle", month: 1, hoursOfSunshine: 34),
         CityMonthlyHoursOfSunshine(city: "Seattle", month: 2, hoursOfSunshine: 31),
         CityMonthlyHoursOfSunshine(city: "Seattle", month: 5, hoursOfSunshine: 66),
