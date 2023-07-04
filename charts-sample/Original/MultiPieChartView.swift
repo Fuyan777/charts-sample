@@ -16,7 +16,7 @@ struct MultiPieData: Identifiable {
 }
 
 struct MultiPieChartView: View {
-    @State private var data: [MultiPieData] = [
+    @State var data: [MultiPieData] = [
         MultiPieData(endAngle1: 0, endAngle2: 0, endAngle3: 3, frameSize: 300),
         MultiPieData(endAngle1: 0, endAngle2: 0, endAngle3: 4, frameSize: 250),
         MultiPieData(endAngle1: 0, endAngle2: 0, endAngle3: 1, frameSize: 200),
